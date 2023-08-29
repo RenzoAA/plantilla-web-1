@@ -333,14 +333,14 @@ img {
 
 .nav-principal {
     position: absolute;
-    top: 120%;
+    top: 100%;
     right: 0;
     width: 320px;
-    min-height: 410px;
+    min-height: 500px;
     height: 65vh;
     padding: 0;
-    border-radius: 12px 0 0 12px;
-    background-color: var(--bs-nomebaja-blue);
+    /* border-radius: 12px 0 0 12px; */
+    background-color: var(--bs-white);
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
     transform: translateX(100%);
     transition-duration: .5s;
@@ -377,13 +377,15 @@ img {
 .nav__enlace {
     text-decoration: none;
     display: flex;
-    width: 200px;
+    margin-bottom: .5rem;
+    width: fit-content;
     height: 60px;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     font-size: 19px;
-    border-bottom: 1px solid #345963;
-    color: var(--bs-white);
+    border-bottom: 3px solid #2895d5;
+    color: #2895d5;
     transition-duration: .2s;
     font-weight: 700
 }
@@ -666,7 +668,7 @@ img {
 
 @media screen and (min-width:576px) {
     .nav-principal {
-        border-radius: 12px
+        /* border-radius: 12px */
     }
 }
 
@@ -812,11 +814,13 @@ img {
         box-shadow: none;
         height: 100%;
         min-height: initial;
-        width: 700px
+        width: 800px;
+        background-color: var(--bs-white);;
     }
-
+    
     .nav__ul {
         width: 100%;
+        background-color: var(--bs-white);
         display: flex;
         justify-content: flex-end;
         flex-wrap: nowrap;
@@ -848,7 +852,7 @@ img {
     }
 
     .nav__enlace--active {
-        background-color: #345963;
+        background-color: #2895d5;
         color: var(--bs-white)
     }
 
@@ -857,7 +861,7 @@ img {
     }
 
     .nav__enlace:hover {
-        background-color: #345963;
+        background-color: #2895d5;
         color: var(--bs-white)
     }
 
