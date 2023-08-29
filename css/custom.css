@@ -14,12 +14,19 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding-top: 3.7rem
+    
 }
-
+.main{
+    background-color: #f5f9ff;
+}
+b,strong{
+    color: #0e2758 !important;
+}
 .container-px-1 {
     padding-left: 12px !important;
     padding-right: 12px !important
 }
+
 .whatsapp-contactanos {
     color: #fff;
     display: flex;
@@ -51,13 +58,15 @@ body {
     padding: 0;
     margin: 0;
     padding: 5px 0;
-    border-radius: 0 12px 12px 0
+    border-radius: 0 12px 12px 0;
+    letter-spacing: .5px
 }
 
 .whatsapp-contactanos__text span {
     display: flex;
     width: 100%;
     font-size: 18px;
+    letter-spacing: 0;
     justify-content: center
 }
 
@@ -327,13 +336,13 @@ img {
 
 .nav-principal {
     position: absolute;
-    top: 120%;
+    top: 100%;
     right: 0;
     width: 320px;
-    min-height: 410px;
+    min-height: 500px;
     height: 65vh;
     padding: 0;
-    border-radius: 12px 0 0 12px;
+    /* border-radius: 12px 0 0 12px; */
     background-color: var(--bs-white);
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
     transform: translateX(100%);
@@ -371,19 +380,24 @@ img {
 .nav__enlace {
     text-decoration: none;
     display: flex;
-    width: 200px;
+    margin-bottom: .5rem;
+    width: fit-content;
+    padding: 22px 18px;
+    border-radius: 6px 6px 0 0;
     height: 60px;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     font-size: 19px;
-    border-bottom: 1px solid #345963;
-    color: var(--bs-nomebaja-blue);
+    border-bottom: 3px solid #0e2758
+    ;
+    color: #0e2758;
     transition-duration: .2s;
     font-weight: 700
 }
 
 .nav__enlace:hover {
-    color: var(--bs-nomebaja-blue);
+    color: #0e2758;
     font-weight: bolder;
     background-color: rgb(199, 199, 199)
 }
@@ -394,7 +408,7 @@ img {
 
 .footer {
     margin-top: auto;
-    background: #345963 !important;
+    background: #0e2758 !important;
     padding-bottom: 6.1rem;
     position: relative
 }
@@ -461,7 +475,14 @@ img {
     z-index: 990;
     border-radius: 12px
 }
-
+/* Banner header mobile-desktop-tablet */
+.banner-desktop{
+    max-height: 825px;
+    display: none;
+}
+.banner-tablet{
+    display: none;
+}
 .img-asesoria {
     width: 100% !important
 }
@@ -653,11 +674,18 @@ img {
 
 @media screen and (min-width:576px) {
     .nav-principal {
-        border-radius: 12px
+        /* border-radius: 12px */
     }
 }
 
 @media screen and (min-width:768px) {
+    /* BANNER HEADER */
+    .banner-mobile{
+        display: none;
+    }
+    .banner-tablet{
+        display: block;
+    }
     .barra-p {
         display: initial;
         font-size: 1.1rem
@@ -708,7 +736,7 @@ img {
 
     .footer {
         margin-top: auto;
-        background: #345963 !important;
+        background: #0e2758 !important;
         padding-bottom: 3rem
     }
 
@@ -758,6 +786,12 @@ img {
 }
 
 @media screen and (min-width:992px) {
+    .banner-tablet{
+        display: none;
+    }
+    .banner-desktop{
+        display: block;
+    }
     .distritos-lima-desktop {
         display: initial
     }
@@ -786,11 +820,13 @@ img {
         box-shadow: none;
         height: 100%;
         min-height: initial;
-        width: 700px
+        width: 800px;
+        background-color: var(--bs-white);;
     }
-
+    
     .nav__ul {
         width: 100%;
+        background-color: var(--bs-white);
         display: flex;
         justify-content: flex-end;
         flex-wrap: nowrap;
@@ -813,7 +849,7 @@ img {
         width: calc(100% + 50px);
         font-size: 17px;
         padding: 10px 14px;
-        border-radius: 24px;
+        border-radius: 3px;
         transition-duration: .5s
     }
 
@@ -822,7 +858,8 @@ img {
     }
 
     .nav__enlace--active {
-        background-color: #345963;
+        background-color: #0e2758
+        ;
         color: var(--bs-white)
     }
 
@@ -831,7 +868,7 @@ img {
     }
 
     .nav__enlace:hover {
-        background-color: #345963;
+        background-color: #0e2758;        ;
         color: var(--bs-white)
     }
 
