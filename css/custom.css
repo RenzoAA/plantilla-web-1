@@ -1,0 +1,891 @@
+@import url(bootstrapcustom.css);
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    overflow-x: hidden
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 3.7rem
+}
+
+.container-px-1 {
+    padding-left: 12px !important;
+    padding-right: 12px !important
+}
+.whatsapp-contactanos {
+    color: #fff;
+    display: flex;
+    width: 270px;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    text-decoration: none
+}
+
+.whatsapp-contactanos:hover {
+    color: #fff
+}
+
+.whatsapp-contactanos__img {
+    width: 100px;
+    position: absolute;
+    left: 0
+}
+
+.whatsapp-contactanos__text {
+    width: 68%;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #74b970;
+    padding: 0;
+    margin: 0;
+    padding: 5px 0;
+    border-radius: 0 12px 12px 0
+}
+
+.whatsapp-contactanos__text span {
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+    justify-content: center
+}
+
+.num-whatsapp {
+    animation: numWhatsapp 3s infinite
+}
+
+@keyframes numWhatsapp {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    10% {
+        transform: rotate(9deg)
+    }
+
+    20% {
+        transform: rotate(0deg)
+    }
+
+    30% {
+        transform: rotate(7deg)
+    }
+
+    40% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(5deg)
+    }
+
+    60% {
+        transform: rotate(0deg)
+    }
+
+    70% {
+        transform: rotate(3deg)
+    }
+
+    80% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.btn-equipo {
+    animation: signalEquipo 1.5s infinite
+}
+
+@keyframes signalEquipo {
+    0% {
+        box-shadow: 0 0 0 0 var(--bs-nomebaja-magenta)
+    }
+
+    100% {
+        box-shadow: 0 0 0 11px rgba(0, 0, 0, 0)
+    }
+}
+
+@media screen and (min-width:768px) {
+    .btn-equipo {
+        animation: signalEquipo 1.5s infinite
+    }
+
+    @keyframes signalEquipo {
+        0% {
+            box-shadow: 0 0 0 0 var(--bs-nomebaja-magenta)
+        }
+
+        100% {
+            box-shadow: 0 0 0 12px rgba(0, 0, 0, 0)
+        }
+    }
+}
+
+.container-px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.carousel-item .carousel-caption {
+    display: flex !important;
+    flex-direction: column;
+    bottom: 0 ! important;
+    top: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 650px;
+    top: -15px !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto;
+    width: 75% !important
+}
+
+@media screen and (min-width:768px) {
+    .carousel-p {
+        font-size: 1.2rem !important
+    }
+
+    .carousel-item .carousel-caption {
+        display: flex !important;
+        flex-direction: column;
+        bottom: 0 ! important;
+        top: 0 !important;
+        justify-content: center !important;
+        align-items: center !important;
+        max-width: 650px;
+        top: -15px !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: auto;
+        width: 85% !important
+    }
+}
+
+@media screen and (min-width:992px) {
+    .carousel-p {
+        font-size: 1.3rem !important
+    }
+}
+
+.btn-contactanos {
+    background: var(--bs-nomebaja-magenta);
+    color: var(--bs-white);
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: 12px;
+    font-weight: bold
+}
+
+.btn-contactanos:hover {
+    color: var(--bs-white)
+}
+
+.barra {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bs-nomebaja-magenta);
+    height: 75px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 998
+}
+
+.barra__mobile {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+    height: 100%
+}
+
+.boton__barra {
+    min-width: 100px;
+    position: relative;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.boton-whatsapp__enlace {
+    position: relative;
+    font-size: .8rem;
+    animation: whatsappBarra 3s infinite
+}
+
+@keyframes whatsappBarra {
+    0% {
+        transform: scale(1)
+    }
+
+    35% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.boton-preguntas__enlace,
+.boton-zonas__enlace {
+    font-size: .6rem;
+    font-weight: bold
+}
+
+.boton-preguntas__enlace:hover,
+.boton-zonas__enlace:hover,
+.boton-whatsapp__enlace:hover {
+    color: white;
+    transform: scale(1.1)
+}
+
+.boton-whatsapp__img {
+    width: 67px
+}
+
+.boton-preguntas__img,
+.boton-zonas__img {
+    width: 32px
+}
+
+.barra__enlace {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: .5s;
+    gap: 6px;
+    letter-spacing: .5px
+}
+
+img {
+    max-width: 100%
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 0 !important;
+    z-index: 999;
+    background-color: #fff
+}
+
+.header__content {
+    padding: 0 !important;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.logo {
+    margin-left: 1rem;
+    width: 75px
+}
+
+.hamburger-box {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 70px !important;
+    height: 45px !important;
+    border-radius: 3px;
+    margin-right: 1rem;
+    padding: 0 !important
+}
+
+.nav-principal {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    width: 320px;
+    min-height: 410px;
+    height: 65vh;
+    padding: 0;
+    border-radius: 12px 0 0 12px;
+    background-color: var(--bs-white);
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    transform: translateX(100%);
+    transition-duration: .5s;
+    visibility: hidden;
+    opacity: 0;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    z-index: 999;
+    display: none
+}
+
+.nav-active {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0)
+}
+
+.nav__ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.nav__li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.nav__enlace {
+    text-decoration: none;
+    display: flex;
+    width: 200px;
+    height: 60px;
+    align-items: center;
+    gap: 10px;
+    font-size: 19px;
+    border-bottom: 1px solid #345963;
+    color: var(--bs-nomebaja-blue);
+    transition-duration: .2s;
+    font-weight: 700
+}
+
+.nav__enlace:hover {
+    color: var(--bs-nomebaja-blue);
+    font-weight: bolder;
+    background-color: rgb(199, 199, 199)
+}
+
+.nav__enlace img {
+    width: 35px
+}
+
+.footer {
+    margin-top: auto;
+    background: #345963 !important;
+    padding-bottom: 6.1rem;
+    position: relative
+}
+
+.footer .container {
+    position: relative
+}
+
+.dmca-badge img {
+    display: none
+}
+
+.enlace-whatsapp__flotante {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    display: none;
+    z-index: 998;
+    animation: signalFlotante 1.5s infinite;
+    border-radius: 50%
+}
+
+@keyframes signalFlotante {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.enlace-whatsapp__flotante .boton-whatsapp__img {
+    transition-duration: .5s
+}
+
+.enlace-whatsapp__flotante:hover .boton-whatsapp__img {
+    width: 72px
+}
+
+.heading-banner {
+    position: relative;
+    border-radius: 0 0 32px 32px;
+    background-attachment: fixed
+}
+
+.heading-banner::before {
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    background: rgba(17, 17, 17, 0.6) none repeat scroll 0 0;
+    border-radius: 0 0 32px 32px
+}
+
+.heading-banner__title {
+    z-index: 990;
+    border-radius: 12px
+}
+
+.img-asesoria {
+    width: 100% !important
+}
+
+.heading-banner__ventas {
+    background-image: url(../imagenes/sobre-nosotros.jpg)
+}
+
+.heading-banner__blog {
+    background-image: url(../imagenes/sobre-nosotros.jpg)
+}
+
+.heading-banner__preguntas {
+    background-image: url(../imagenes/sobre-nosotros.jpg)
+}
+
+.slider-principal {
+    position: relative;
+    min-height: 300px;
+    height: 90vh !important;
+    max-height: 495px !important;
+    border-radius: 55px
+}
+
+.slider-principal__inner {
+    height: 100% !important;
+    position: relative;
+    border-radius: 0 0 35px 35px
+}
+
+.slider-principal__inner .slider-item::before {
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    background: rgba(17, 17, 17, 0.4) none repeat scroll 0 0
+}
+
+.slider-item {
+    height: 100%
+}
+
+.carousel-caption .titulo-slider {
+    font-size: 2.3rem !important
+}
+
+.slider-item img {
+    height: 100%;
+    object-fit: center
+}
+
+.slider-principal__indicadores {
+    width: 40px !important
+}
+
+.slider-principal__botones {
+    height: 36px;
+    width: 36px !important;
+    top: 46% !important;
+    border-radius: 50%;
+    background-color: var(--bs-nomebaja-magenta) !important;
+    opacity: .6 !important;
+    transition-duration: .5s !important
+}
+
+.slider-principal__botones:hover {
+    opacity: 1 !important
+}
+
+.carousel-item .banner-mobile {
+    display: initial !important
+}
+
+.carousel-item .banner-desktop {
+    display: none !important
+}
+
+.carousel-p {
+    font-size: 1.1rem
+}
+
+.whatsapp-enlace-slider {
+    display: none !important
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 1.3rem !important
+}
+
+.carousel-control-prev-icon {
+    margin-right: 3px !important
+}
+
+.carousel-control-next-icon {
+    margin-left: 3px !important
+}
+
+.carousel-control-prev {
+    left: 4% !important
+}
+
+.carousel-control-next {
+    right: 4% !important
+}
+
+.active {
+    background-color: var(--bs-nomebaja-magenta) !important
+}
+
+.barra-slider--enlaces {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    flex-wrap: wrap !important;
+    margin-bottom: 1rem;
+    flex-direction: row
+}
+
+.barra-p {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    width: fit-content;
+    padding: .2rem .5rem
+}
+
+.barra-slider--enlaces a {
+    display: flex;
+    color: white;
+    background: var(--bs-nomebaja-magenta);
+    padding: .2rem .5rem;
+    border-radius: 12px
+}
+
+.barra-slider--enlaces a:hover {
+    color: white
+}
+
+.barra-slider--enlace {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    width: 100%
+}
+
+.nav-tabs>.active {
+    color: white !important;
+    font-weight: bolder
+}
+
+.card-ventas {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.card-ventas__imagen {
+    width: 100%
+}
+
+.card-ventas__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+
+.card-ventas__text h2 {
+    text-align: center
+}
+
+.card-ventas__enlace {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.distritos-lima-desktop {
+    display: none
+}
+
+@media screen and (min-width:576px) {
+    .nav-principal {
+        border-radius: 12px
+    }
+}
+
+@media screen and (min-width:768px) {
+    .barra-p {
+        display: initial;
+        font-size: 1.1rem
+    }
+
+    .barra-slider--enlace {
+        width: 70%;
+        justify-content: flex-start
+    }
+
+    .barra {
+        display: none
+    }
+
+    .slider-principal {
+        position: relative;
+        min-height: 300px;
+        height: 75vh !important;
+        max-height: 450px !important;
+        border-radius: 55px
+    }
+
+    .carousel-caption .btn-equipo {
+        font-size: 1.2rem;
+        margin-bottom: 1rem !important
+    }
+
+    .whatsapp-enlace-slider {
+        display: initial
+    }
+
+    .carousel-item .banner-mobile {
+        display: none !important
+    }
+
+    .carousel-item .banner-desktop {
+        display: initial !important
+    }
+
+    .nav-principal {
+        min-height: 500px;
+        align-items: center
+    }
+
+    .nav__ul {
+        padding-top: 0
+    }
+
+    .footer {
+        margin-top: auto;
+        background: #345963 !important;
+        padding-bottom: 3rem
+    }
+
+    .dmca-badge img {
+        display: initial
+    }
+
+    .enlace-whatsapp__flotante {
+        display: initial
+    }
+
+    .img-asesoria {
+        width: 75% !important
+    }
+
+    .blog-card {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        margin-bottom: 1.5rem;
+        justify-content: space-between
+    }
+
+    .blog-card .blog-card__img {
+        width: 40%
+    }
+
+    .blog-card .blog-card__img img {
+        width: 100%;
+        height: 100%
+    }
+
+    .blog-card .blog-card__text {
+        width: 55%;
+        padding: 2rem
+    }
+
+    .blog-card .blog-card__text h3,
+    .blog-card .blog-card__text p {
+        text-align: left !important
+    }
+
+    .blog-card .blog-card__text .blog-card__leermas {
+        width: fit-content !important;
+        margin-left: 0 !important
+    }
+}
+
+@media screen and (min-width:992px) {
+    .distritos-lima-desktop {
+        display: initial
+    }
+
+    .distritos-lima-mobile {
+        display: none
+    }
+
+    .hamburger-box {
+        display: none !important
+    }
+
+    .slider-principal {
+        position: relative;
+        min-height: 300px;
+        height: 90vh !important;
+        max-height: 475px !important;
+        border-radius: 55px
+    }
+
+    .nav-principal {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        position: initial;
+        box-shadow: none;
+        height: 100%;
+        min-height: initial;
+        width: 700px
+    }
+
+    .nav__ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        height: 100%;
+        align-items: center;
+        padding-top: initial;
+        gap: 7px
+    }
+
+    .nav__li {
+        width: auto
+    }
+
+    .nav__enlace {
+        justify-content: center;
+        border-bottom: none;
+        border-width: 3px;
+        gap: 3px;
+        height: 40px;
+        width: calc(100% + 50px);
+        font-size: 17px;
+        padding: 10px 14px;
+        border-radius: 24px;
+        transition-duration: .5s
+    }
+
+    .nav__enlace img {
+        display: none
+    }
+
+    .nav__enlace--active {
+        background-color: #345963;
+        color: var(--bs-white)
+    }
+
+    .nav__enlace--active:hover {
+        color: var(--bs-white)
+    }
+
+    .nav__enlace:hover {
+        background-color: #345963;
+        color: var(--bs-white)
+    }
+
+    .carousel-caption .titulo-slider {
+        font-size: 3.4rem !important
+    }
+
+    .btn-equipo {
+        font-size: 1.5rem;
+        animation: signalEquipo 1.5s infinite
+    }
+
+    @keyframes signalEquipo {
+        0% {
+            box-shadow: 0 0 0 0 var(--bs-nomebaja-magenta)
+        }
+
+        100% {
+            box-shadow: 0 0 0 15px rgba(0, 0, 0, 0)
+        }
+    }
+
+    .carousel-item .banner-mobile {
+        display: none !important
+    }
+
+    .carousel-item .banner-desktop {
+        display: initial !important
+    }
+
+    .card-ventas {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row
+    }
+
+    .card-ventas__imagen {
+        width: 35%
+    }
+
+    .card-ventas__text {
+        width: 60%;
+        display: flex;
+        flex-direction: column
+    }
+
+    .card-ventas__text h2 {
+        text-align: left
+    }
+
+    .card-ventas__enlace {
+        width: 100%;
+        display: flex;
+        justify-content: center
+    }
+}

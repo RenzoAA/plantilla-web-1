@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button#btn-cerrar-modal {
+        margin-left: 90%;
+        border-radius: 6px;
+        border: none;
+        background: #61ce70;
+        color: white;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+
+    }
+    button#btn-cerrar-modal:focus{
+        outline: none;
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    .btn-cerrar-modal {}
+
+    .modal-receta {
+        width: 85%;
+        max-width: 650px;
+        border-radius: 12px;
+        border: none;
+        color: #0b132b;
+        /* padding: 2rem 5rem; */
+        box-shadow: 0 0.5rem 0.5rem #332e2e;
+    }
+
+    .modal-receta h2,
+    .modal-receta h3 {
+        color: #1e73be;
+    }
+
+    #modal-receta::backdrop {
+        background-color: rgba(0, 0, 0, .5);
+    }
+</style>
+
+<body>
+
+    <div class="yith-wcbm-badge-7571">
+
+        <div class="prueba">
+            <div class="prueba-2">
+                <div class="probando">
+                    <p>BOTON</p>
+                    <p>BOTON</p>
+                    <p>BOTON</p>
+                    <p>BOTON</p>
+                    <p>BOTON</p>
+                    <h2>asdads</h2>
+                    <h3>asddasdaaddsa</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn-receta">Instrucciones de Receta Medica</button>
+    <dialog open="" id="modal-receta" class="modal-receta">
+        <h3>Receta Médica: Sigue los Pasos y Requisitos para Envío vía WhatsApp</h3>
+        <h4>Requisitos:</h4>
+        <ol>
+            <li>Enviar a whatsapp foto o pdf de la Receta Médica</li>
+            <li>Nombre, sello y firma del profesional</li>
+            <li>Nombres y apellidos del paciente</li>
+            <li>Fechas de expedición y
+                Fecha de vigencia de la receta</li>
+            <li>Vía de administración</li>
+            <li>Sello y firma del prescriptor </li>
+            <li>Nombre y concentracion del producto farmacéutico</li>
+
+            <li>Nombre de la Institucion</li>
+        </ol>
+        <button id="btn-cerrar-modal" class="btn-cerrar-modal">X</button>
+    </dialog>
+    <script src="js/btnModal.js"></script>
+
+
+    <!-- INSTRUCCIONES DE RECETA MEDICA  -->
+    <div class="btn-receta">Instrucciones de Receta Medica</div>
+</body>
+
+</html>
