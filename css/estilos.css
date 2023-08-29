@@ -19,6 +19,9 @@ body {
 .main{
     background-color: #f5f9ff;
 }
+b,strong{
+    color: #0e2758 !important;
+}
 .container-px-1 {
     padding-left: 12px !important;
     padding-right: 12px !important
@@ -379,19 +382,22 @@ img {
     display: flex;
     margin-bottom: .5rem;
     width: fit-content;
+    padding: 22px 18px;
+    border-radius: 6px 6px 0 0;
     height: 60px;
     align-items: center;
     justify-content: center;
     gap: 10px;
     font-size: 19px;
-    border-bottom: 3px solid #2895d5;
-    color: #2895d5;
+    border-bottom: 3px solid #0e2758
+    ;
+    color: #0e2758;
     transition-duration: .2s;
     font-weight: 700
 }
 
 .nav__enlace:hover {
-    color: var(--bs-nomebaja-blue);
+    color: #0e2758;
     font-weight: bolder;
     background-color: rgb(199, 199, 199)
 }
@@ -402,7 +408,7 @@ img {
 
 .footer {
     margin-top: auto;
-    background: #345963 !important;
+    background: #0e2758 !important;
     padding-bottom: 6.1rem;
     position: relative
 }
@@ -730,7 +736,7 @@ img {
 
     .footer {
         margin-top: auto;
-        background: #345963 !important;
+        background: #0e2758 !important;
         padding-bottom: 3rem
     }
 
@@ -843,7 +849,7 @@ img {
         width: calc(100% + 50px);
         font-size: 17px;
         padding: 10px 14px;
-        border-radius: 24px;
+        border-radius: 3px;
         transition-duration: .5s
     }
 
@@ -852,7 +858,8 @@ img {
     }
 
     .nav__enlace--active {
-        background-color: #2895d5;
+        background-color: #0e2758
+        ;
         color: var(--bs-white)
     }
 
@@ -861,7 +868,7 @@ img {
     }
 
     .nav__enlace:hover {
-        background-color: #2895d5;
+        background-color: #0e2758;        ;
         color: var(--bs-white)
     }
 
