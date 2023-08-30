@@ -25,7 +25,7 @@ b,strong{
 /* SIDEBAR PRINCIPAL */
 .sidebar_principal__enlace{
     text-decoration: none;
-    background: #0e2758;
+    background: #99408a;
     width: 90%;
     color: #ffff;
     padding: 16px 26px;
@@ -38,6 +38,17 @@ b,strong{
 /* SIDEBAR PRINCIPAL SECTION BLOG */
 .sidebar-blog__enlaces{
     text-decoration: none;
+}
+.sidebar-blog__enlaces p{
+    background-color: #99408a;
+}
+
+/* BLOG ENLACES ARTICULOS CARDS */
+.articulos-enlaces{
+    width: 100%;
+}
+.card-title a{
+    color: #113885 !important;
 }
 .container-px-1 {
     padding-left: 12px !important;
@@ -148,6 +159,12 @@ b,strong{
 }
 
 @media screen and (min-width:768px) {
+    
+/* BLOG ENLACES ARTICULOS CARDS */
+.articulos-enlaces{
+    width: 48%;
+}
+
     .btn-equipo {
         animation: signalEquipo 1.5s infinite
     }
@@ -184,6 +201,10 @@ b,strong{
 }
 
 @media screen and (min-width:768px) {
+    /* TITULO PRIMARIOS */
+.heading-banner__title {
+    font-size: 2rem !important;
+}
     .carousel-p {
         font-size: 1.2rem !important
     }
@@ -205,9 +226,17 @@ b,strong{
 }
 
 @media screen and (min-width:992px) {
+        /* TITULO PRIMARIOS */
+.heading-banner__title {
+    font-size: 2rem !important;
+}
     .carousel-p {
         font-size: 1.3rem !important
     }
+    /* BLOG ENLACES ARTICULOS CARDS */
+.articulos-enlaces{
+    width: 32%;
+}
 }
 
 .btn-contactanos {
@@ -350,7 +379,6 @@ img {
     margin-right: 1rem;
     padding: 0 !important
 }
-
 .nav-principal {
     position: absolute;
     top: 100%;
@@ -476,15 +504,16 @@ img {
 }
 /* TITULO PRIMARIOS */
 .heading-banner__title {
-    font-size: 4rem;
+    font-size: 1.5rem;
     z-index: 990;
     background-color: #0e2758;
     position: absolute;
-    bottom: 25px;
-}
-/* Subtitulos primarios */
-.subtitulos-primarios{
-    font-size: 52px;
+    /* bottom: 25px; */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    /* width: fit-content; */
+    text-align: center;
 }
 /* Banner header mobile-desktop-tablet */
 .banner-desktop{
@@ -808,11 +837,13 @@ img {
 
     .blog-card .blog-card__text .blog-card__leermas {
         width: fit-content !important;
-        margin-left: 0 !important
     }
 }
-
 @media screen and (min-width:992px) {
+    /* Subtitulos primarios */
+.subtitulos-primarios{
+    font-size: 52px;
+}
     .banner-secundario-desktop{
         width: 100%;
         display: block;
@@ -893,7 +924,7 @@ img {
     }
 
     .nav__enlace--active {
-        background-color: #0e2758
+        background-color: #99408a
         ;
         color: var(--bs-white)
     }
@@ -903,7 +934,7 @@ img {
     }
 
     .nav__enlace:hover {
-        background-color: #0e2758;        ;
+        background-color: #99408a;        ;
         color: var(--bs-white)
     }
 
@@ -960,4 +991,17 @@ img {
         display: flex;
         justify-content: center
     }
+}
+@media screen and (min-width:1200px) {
+    /* TITULO PRIMARIOS */
+.heading-banner__title {
+font-size: 3rem !important;
+}
+.carousel-p {
+    font-size: 1.3rem !important
+}
+/* BLOG ENLACES ARTICULOS CARDS */
+.articulos-enlaces{
+width: 32%;
+}
 }
