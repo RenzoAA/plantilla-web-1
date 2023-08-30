@@ -22,6 +22,23 @@ body {
 b,strong{
     color: #0e2758 !important;
 }
+/* SIDEBAR PRINCIPAL */
+.sidebar_principal__enlace{
+    text-decoration: none;
+    background: #0e2758;
+    width: 90%;
+    color: #ffff;
+    padding: 16px 26px;
+    text-align: center;
+    border-radius: 12px;
+}
+.sidebar_principal__enlace:hover{
+    color: #fff;
+}
+/* SIDEBAR PRINCIPAL SECTION BLOG */
+.sidebar-blog__enlaces{
+    text-decoration: none;
+}
 .container-px-1 {
     padding-left: 12px !important;
     padding-right: 12px !important
@@ -455,25 +472,19 @@ img {
 
 .heading-banner {
     position: relative;
-    border-radius: 0 0 32px 32px;
-    background-attachment: fixed
+    background-attachment: fixed;
 }
-
-.heading-banner::before {
-    content: " ";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-    background: rgba(17, 17, 17, 0.6) none repeat scroll 0 0;
-    border-radius: 0 0 32px 32px
-}
-
+/* TITULO PRIMARIOS */
 .heading-banner__title {
+    font-size: 4rem;
     z-index: 990;
-    border-radius: 12px
+    background-color: #0e2758;
+    position: absolute;
+    bottom: 25px;
+}
+/* Subtitulos primarios */
+.subtitulos-primarios{
+    font-size: 52px;
 }
 /* Banner header mobile-desktop-tablet */
 .banner-desktop{
@@ -486,15 +497,21 @@ img {
 .img-asesoria {
     width: 100% !important
 }
-
+/* BANNER SECUUNDARIO */
+.banner-secundario-mobile{
+    width: 100%;
+}
+.banner-secundario-tablet{
+    width: 100%;
+    display: none;
+}
+.banner-secundario-desktop{
+    width: 100%;
+    display: none;
+}
 .heading-banner__ventas {
     background-image: url(../imagenes/sobre-nosotros.jpg)
 }
-
-.heading-banner__blog {
-    background-image: url(../imagenes/sobre-nosotros.jpg)
-}
-
 .heading-banner__preguntas {
     background-image: url(../imagenes/sobre-nosotros.jpg)
 }
@@ -679,12 +696,22 @@ img {
 }
 
 @media screen and (min-width:768px) {
-    /* BANNER HEADER */
+    /* BANNER HOME HEADER */
     .banner-mobile{
         display: none;
     }
     .banner-tablet{
         display: block;
+    }
+    /* BANNER SECUNDARIO HEADER */
+    .banner-secundario-mobile{
+        width: 100%;
+        display: none;
+    }
+    .banner-secundario-tablet{
+        width: 100%;
+        display: block;
+        max-height: 500px;
     }
     .barra-p {
         display: initial;
@@ -786,6 +813,14 @@ img {
 }
 
 @media screen and (min-width:992px) {
+    .banner-secundario-desktop{
+        width: 100%;
+        display: block;
+        max-height: 600px;
+    }
+    .banner-secundario-tablet{
+        display: none;
+    }
     .banner-tablet{
         display: none;
     }

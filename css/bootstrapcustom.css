@@ -685,7 +685,7 @@ progress {
 
     .container-sm,
     .container {
-        max-width: 540px
+        max-width: 768px
     }
 }
 
@@ -694,7 +694,7 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 720px
+        max-width: 992px
     }
 }
 
@@ -704,7 +704,7 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 960px
+        max-width: 1200px
     }
 }
 
@@ -715,7 +715,7 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 1140px
+        max-width: 1400px
     }
 }
 
@@ -727,7 +727,7 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 1320px
+        max-width: 1520px;
     }
 }
 
@@ -9379,7 +9379,7 @@ fieldset:disabled .btn {
 
 .bg-secondary {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important
+    background-color: #0e2758 !important
 }
 
 .bg-success {
