@@ -595,6 +595,19 @@ img {
     width: 100%;
     max-width: 440px;
     text-align: left;
+    position: relative;
+}
+.heading-banner__title::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 180px;
+    height: 55px;
+    background: #a74e98;
+    z-index: -1;
+    top: 12px;
+    left: -5px;
+    opacity: .8;
 }
 /* Banner header mobile-desktop-tablet */
 .banner-desktop{
@@ -807,6 +820,7 @@ img {
 }
 
 @media screen and (min-width:768px) {
+
     /* BANNER HOME HEADER */
     .banner-mobile{
         display: none;
@@ -828,6 +842,13 @@ img {
         width: 80%;
         max-width: 600px;
         text-align: left;
+    }
+    /* BANNER SECUNDARIO */
+    .heading-banner__title::before{
+        width: 275px;
+        height: 75px;
+        background: #a74e98;
+        opacity: .8;
     }
     .banner-secundario-mobile{
         width: 100%;
@@ -1135,6 +1156,14 @@ img {
     /* TITULO PRIMARIOS */
 .heading-banner__title {
 font-size: 3.5rem;
+}
+/* BANNER SECUNDARIO */
+.heading-banner__title::before{
+    width: 325px;
+    height: 85px;
+    background: #a74e98;
+    opacity: .8;
+   
 }
 .carousel-p {
     font-size: 1.3rem !important
