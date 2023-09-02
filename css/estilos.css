@@ -603,7 +603,7 @@ img {
 }
 /* Banner principal texto */
 .banner-principal__texto{
-    top: calc(50% - 180px);
+    top: calc(50% - 200px);
     position: absolute;
 }
 /* BOTON WHATSAPP PRINCIPAL  */
