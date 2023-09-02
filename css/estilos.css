@@ -601,9 +601,13 @@ img {
     background: black;
     opacity: 0.4;
 }
+/* BANnner principal titulo h1 principal */
+.titulo-principal{
+    font-size: 23px;
+}
 /* Banner principal texto */
 .banner-principal__texto{
-    top: calc(50% - 200px);
+    top: calc(50% - 180px);
     position: absolute;
 }
 /* BOTON WHATSAPP PRINCIPAL  */
