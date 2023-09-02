@@ -604,7 +604,7 @@ img {
 /* Banner principal texto */
 .banner-principal__texto{
 
-    top: 50%;
+    top: calc(50% - 180px);
     position: absolute;
 }
 /* BOTON WHATSAPP PRINCIPAL  */
@@ -612,10 +612,13 @@ img {
     background: #a74e98;
     color: white;
     padding: 12px 50px;
+    text-decoration: none;
     display: flex;
     width: fit-content;
     justify-content: center;
     align-items: center;
+    border-radius: 12px;
+    font-weight: bold !important;
 }
 
 /* H1 URL PRINCIPALES */
