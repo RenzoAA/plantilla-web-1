@@ -81,11 +81,11 @@ b,strong{
     border-radius: 12px;
     font-size: 20px !important;
     transition: .5s;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 .sidebar-blog__enlaces:hover p{
     background-color: white !important;
-    border: 1px solid #0e2758;
+    border: 2px solid #0e2758;
     color: #0e2758 !important;
     border-radius: 0;
 }
@@ -460,7 +460,11 @@ img {
     flex-direction: row !important;
     align-items: center;
     z-index: 999;
-    display: none
+    display: none; 
+    border-width: 0 3px 3px 3px;
+    border-style: solid;
+    border-color: #0e2758;
+    border-radius: 0 0 12px 12px;
 }
 
 .nav-active {
@@ -579,7 +583,23 @@ img {
     width: 100%;
     height: 100%;
     background: #92B4D9;
-    opacity: 0.4;
+    opacity: 0.2;
+}
+.banner-principal{
+    margin: 0;
+    position: relative;
+    padding: 0;
+}
+.banner-principal:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #92B4D9;
+    opacity: 0.2;
 }
 /* H1 URL PRINCIPALES */
 .box-banner__title{
@@ -598,6 +618,32 @@ img {
     position: relative;
 }
 .heading-banner__title::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 180px;
+    height: 55px;
+    background: #a74e98;
+    z-index: -1;
+    top: 12px;
+    left: -5px;
+    opacity: .8;
+}
+.box-banner__title-articulos{
+    top: calc(55% - 75px);
+    position: absolute;
+    width: 100%;
+}
+.heading-banner__title-articulos{
+    font-size: 2rem;
+    z-index: 990;
+    /* bottom: 25px; */
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    position: relative;
+}
+.heading-banner__title-articulos::before{
     content: "";
     display: flex;
     position: absolute;
@@ -850,6 +896,27 @@ img {
         background: #a74e98;
         opacity: .8;
     }
+    /* TITULOS H1 BANNER ARTICULOS */
+    .box-banner__title-articulos{
+        top: calc(55% - 125px);
+        position: absolute;
+        width: 100%;
+    }
+    .heading-banner__title-articulos{
+        font-size: 3.5em;
+        z-index: 990;
+        /* bottom: 25px; */
+        width: 100%;
+        max-width: 440px;
+        text-align: left;
+        position: relative;
+    }
+    .heading-banner__title-articulos::before{
+        width: 275px;
+        height: 75px;
+        background: #a74e98;
+        top: 15px;
+    }
     .banner-secundario-mobile{
         width: 100%;
         display: none;
@@ -972,6 +1039,17 @@ img {
     margin-bottom: .3rem;
 }
 @media screen and (min-width:992px) {
+    /* nav principal */
+    .nav-principal{
+        border-width: none;
+    border-style: none;
+    border-color: none;
+    border-radius:none;
+    }
+    /* Tabla de Contenidos */
+    .tabla-contenidos{
+        padding: 2rem 3.5rem;
+    }
     .sidebar-blog__enlaces p{
         background-color: #a74e98;
         border-radius: 12px;
@@ -1036,7 +1114,6 @@ img {
         height: 100%;
         align-items: center;
         padding-top: initial;
-        gap: 7px
     }
 
     .nav__li {
@@ -1146,6 +1223,26 @@ img {
         max-width: 750px;     
         text-align: left;
     }
+    .box-banner__title-articulos{
+        top: calc(55% - 110px);
+        position: absolute;
+        width: 100%;
+    }
+    .heading-banner__title-articulos{
+        font-size: 3.3em;
+        z-index: 990;
+        /* bottom: 25px; */
+        width: 100%;
+        max-width: 440px;
+        text-align: left;
+        position: relative;
+    }
+    .heading-banner__title-articulos::before{
+        width: 275px;
+        height: 75px;
+        background: #a74e98;
+        top: 15px;
+    }
 }
 @media screen and (min-width:1200px) {
     .sidebar-blog__enlaces p{
@@ -1164,6 +1261,26 @@ font-size: 3.5rem;
     background: #a74e98;
     opacity: .8;
    
+}
+.box-banner__title-articulos{
+    top: calc(55% - 125px);
+    position: absolute;
+    width: 100%;
+}
+.heading-banner__title-articulos{
+    font-size: 3.7rem;
+    z-index: 990;
+    /* bottom: 25px; */
+    width: 100%;
+    max-width: 440px;
+    text-align: left;
+    position: relative;
+}
+.heading-banner__title-articulos::before{
+    width: 275px;
+    height: 75px;
+    background: #a74e98;
+    top: 15px;
 }
 .carousel-p {
     font-size: 1.3rem !important
