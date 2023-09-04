@@ -609,6 +609,9 @@ img {
 .banner-principal__texto{
     top: calc(50% - 180px);
     position: absolute;
+    /* margin: 0 auto;
+    left: 0;
+    right: 0; */
 }
 /* BOTON WHATSAPP PRINCIPAL  */
 .boton-whatsapp-prinpicipal{
@@ -891,7 +894,17 @@ img {
 }
 
 @media screen and (min-width:768px) {
-
+    /* H1 TITULO PRINCIPAL-TITULO BANNER PRINCIPAL */
+    .banner-principal__content{
+        max-width: 790px !important;
+        /* background-color: red; */
+    }
+    .titulo-principal{
+        font-size: 52px;
+    }
+    .banner-principal__content p{
+        font-size: 18px;
+    }
     /* BANNER HOME HEADER */
     .banner-mobile{
         display: none;
@@ -1079,6 +1092,18 @@ img {
         background-color: #a74e98;
         border-radius: 12px;
         font-size: 18px !important;
+    }
+    /* banner principal y h1 principal */
+    .titulo-principal{
+        font-size: 48px;
+    }
+    /* Banner principal texto */
+    .banner-principal__texto{
+        top: calc(50% - 205px);
+        position: absolute;
+        /* margin: 0 auto;
+        left: 0;
+        right: 0; */
     }
     /* Subtitulos primarios */
 .subtitulos-primarios{
