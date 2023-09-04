@@ -9273,7 +9273,8 @@ fieldset:disabled .btn {
 
 .text-primary {
     --bs-text-opacity: 1;
-    color: #2f3954 !important
+    color: #2f3954 !important;
+    font-weight: bold !important;
 }
 
 .text-secondary {
