@@ -153,14 +153,14 @@ b,strong{
     width: fit-content; text-decoration: none; 
     transition: .5s;
     border-radius: 12px;
-    border: 1px solid;
+    border: 2px solid;
 }
 .btn-consulta:hover{
     border-radius: 0px;
     color: #0e2758;
 }
 .btn-consulta img{
-    width: 35px;
+    width: 40px;
 }
 /* BLOG */
 /* TABLA DE CONTENIDOS GLOBAL */
@@ -1323,7 +1323,7 @@ img {
         background-color: #e97195;
         color: var(--bs-white);
         
-        animation: menuActive 5s infinite;
+        animation: menuActive 4s infinite;
         animation-delay: 2s;
     }
     @keyframes menuActive {
