@@ -7,13 +7,89 @@
 * {
     box-sizing: border-box;
     font-family: Raleway;
+    padding: 0;
+    margin: 0;
     font-weight: 600 !important;
 }
 
 html {
     overflow-x: hidden
 }
-
+/* SLIDER INFO START */                          
+.slider-info{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    /* padding-top: 20px; */
+}
+.cards-info{
+    height: 100%;
+    width: 100%;
+    position:  relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    /* position: absolute; */
+    left: 0;
+}
+.card-info{
+    /* background-color: blue; */
+    cursor: pointer;
+    width:65%;
+    position: absolute;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44,1);
+}
+.info-img{
+    border-radius: 12px;
+    width: 100%;
+    z-index: 1000;
+}
+.input-info{
+    display: none;
+}
+#item-2:checked ~ .cards-info #selector-1,
+#item-1:checked ~ .cards-info #selector-3,
+#item-3:checked ~ .cards-info #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    z-index: 0;
+}
+#item-3:checked ~ .cards-info #selector-1,
+#item-1:checked ~ .cards-info #selector-2,
+#item-2:checked ~ .cards-info #selector-3{
+    transform: translateX(40%) scale(0.8);
+    z-index: 0;
+}
+#item-1:checked ~ .cards-info #selector-1,
+#item-2:checked ~ .cards-info #selector-2,
+#item-3:checked ~ .cards-info #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+/* SLIDER INFO END */
+.maquina{
+    display: inline-flex;
+    white-space: nowrap;
+    width: 3ch;
+    border-right: 3px solid transparent;
+    /* background-color: red; */
+    animation: typing 3.5s infinite steps(10);
+    animation-delay: 1.5s;
+    overflow: hidden;
+}
+.btn-leermas__primary{
+    font-size: 1.1rem !important;
+    width: 140px;
+    border-radius: 12px;
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+@keyframes typing {
+    from {width: 0;}
+}
 body {
     overflow: hidden;
     display: flex;
@@ -43,6 +119,47 @@ b,strong{
     color: white;
     background: #0e2758;
     border-radius: 12px;
+}
+/* QUIENES SOMOS */
+.btn-sobre-nosotros{
+    animation: signalEquipo 1.5s infinite
+}
+/* NUESTROS SERVICIOS */
+.title-servicios{
+    border-bottom: 2px solid rgb(250, 241, 241);
+}
+.servicios-element{
+    border-bottom: 2px solid rgb(221, 221, 221);
+    /* border-top: 1px solid rgb(221, 221, 221); */
+    /* border: 2px solid rgb(221, 221, 221); */
+    /* border-radius: 12px; */
+    /* padding: 42px; */
+}
+.img-servicios img{
+    border-radius: 3px;
+    /* width: 75%; */
+    /* max-width: 150px; */
+}
+.btn-consulta{
+    background-color: white;
+    color: #0e2758;
+    font-weight: 700 !important;
+    text-align: center;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
+    width: fit-content; text-decoration: none; 
+    transition: .5s;
+    border-radius: 12px;
+}
+.btn-consulta:hover{
+    border-radius: 0px;
+    color: #0e2758;
+}
+.btn-consulta img{
+    width: 35px;
 }
 /* BLOG */
 /* TABLA DE CONTENIDOS GLOBAL */
@@ -220,7 +337,7 @@ b,strong{
 
 @keyframes signalEquipo {
     0% {
-        box-shadow: 0 0 0 0 var(--bs-nomebaja-magenta)
+        box-shadow: 0 0 0 0 #e97195
     }
 
     100% {
@@ -241,7 +358,7 @@ b,strong{
 
     @keyframes signalEquipo {
         0% {
-            box-shadow: 0 0 0 0 var(--bs-nomebaja-magenta)
+            box-shadow: 0 0 0 0 #e97195
         }
 
         100% {
@@ -886,7 +1003,11 @@ img {
 .distritos-lima-desktop {
     display: none
 }
+/* SECCION INFO */
 
+.info-section{
+    border-radius: 0 0 35px 35px;
+}
 @media screen and (min-width:576px) {
     .nav-principal {
         /* border-radius: 12px */
@@ -1171,10 +1292,11 @@ img {
         height: 100%;
         align-items: center;
         padding-top: initial;
+        gap: .2rem;
     }
 
     .nav__li {
-        width: auto
+        width: auto;
     }
 
     .nav__enlace {
@@ -1189,6 +1311,7 @@ img {
         border-radius: 3px;
         transition-duration: .5s;
         margin-bottom: 0;
+        
     }
 
     .nav__enlace img {
@@ -1196,11 +1319,42 @@ img {
     }
 
     .nav__enlace--active {
-        background-color: #e97195
-        ;
-        color: var(--bs-white)
+        background-color: #e97195;
+        color: var(--bs-white);
+        
+        animation: menuActive 5s infinite;
+        animation-delay: 2s;
     }
-
+    @keyframes menuActive {
+        0%{
+            transform: rotateZ(0deg);
+        }
+        7%{
+            transform: rotateZ(-3deg);
+        }
+        14%{
+            transform: rotateZ(3deg);
+        }
+        21%{
+            transform: rotateZ(-3deg);
+        }
+        28%{
+            transform: rotateZ(2deg);
+        }
+        35%{
+            transform: rotateZ(-1deg);
+        }
+        50%{
+            transform: rotateZ(0deg);
+        }
+        75%{
+            transform: rotateZ(0deg);
+        }
+        100%{
+            transform: rotateZ(0deg);
+        }
+    }
+    .
     .nav__enlace--active:hover {
         color: var(--bs-white)
     }
@@ -1221,7 +1375,7 @@ img {
 
     @keyframes signalEquipo {
         0% {
-            box-shadow: 0 0 0 0 var(--bs-nomebaja-magenta)
+            box-shadow: 0 0 0 0 #e97195
         }
 
         100% {
@@ -1354,6 +1508,22 @@ width: 32%;
 }
 }
 @media screen and (min-width: 1400px) {
+    .nav__enlace {
+        padding: 10px 18px;  
+    }
+    .card-info{
+        cursor: pointer;
+        width:75%;
+        position: absolute;
+        transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44,1);
+    }
+    .btn-leermas__primary{
+        font-size: 1.2rem !important;
+        width: 150px;
+    }
+    h2{
+        font-size: 46px !important;
+    }
     .titulo-principal{
         font-size: 62px;
     }
