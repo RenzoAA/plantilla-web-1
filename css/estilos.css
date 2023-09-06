@@ -136,7 +136,7 @@ b,strong{
     /* padding: 42px; */
 }
 .img-servicios img{
-    border-radius: 3px;
+    border-radius: 12px;
     /* width: 75%; */
     /* max-width: 150px; */
 }
@@ -153,6 +153,7 @@ b,strong{
     width: fit-content; text-decoration: none; 
     transition: .5s;
     border-radius: 12px;
+    border: 1px solid;
 }
 .btn-consulta:hover{
     border-radius: 0px;
