@@ -169,6 +169,42 @@ b,strong{
     justify-content: center;
     align-items: center;
 }
+.btn-experiencias{
+    animation: btnExperiencias 3s infinite;
+}
+.seccion-experiencias__element img{
+    border-radius: 0 0 6px 6px;
+    /* width: 1px; */
+}
+@keyframes btnExperiencias {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    7%{
+        transform: rotateZ(-3deg);
+    }
+    14%{
+        transform: rotateZ(3deg);
+    }
+    21%{
+        transform: rotateZ(-3deg);
+    }
+    28%{
+        transform: rotateZ(2deg);
+    }
+    35%{
+        transform: rotateZ(-1deg);
+    }
+    50%{
+        transform: rotateZ(0deg);
+    }
+    75%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
 /* BLOG */
 /* TABLA DE CONTENIDOS GLOBAL */
 .tabla-contenidos-box{
@@ -1198,6 +1234,8 @@ img {
         width: fit-content;
         margin-left: 1rem;
     }
+    /* EXPERIENCIAS */
+
 }
 .blog-card__leermas{
     font-size: 19px;
@@ -1461,6 +1499,16 @@ img {
         background: #e97195;
         top: 15px;
     }
+    /* EXPERIENCIAS */
+    .seccion-experiencias__content{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .seccion-experiencias__element{
+        width: 45%;
+    }
 }
 @media screen and (min-width:1200px) {
     .titulo-principal{
@@ -1512,6 +1560,10 @@ font-size: 3.5rem;
 /* BLOG ENLACES ARTICULOS CARDS */
 .articulos-enlaces{
 width: 32%;
+}
+/* EXPERIENCIAS */
+.seccion-experiencias__element{
+    width: 32%;
 }
 }
 @media screen and (min-width: 1400px) {
