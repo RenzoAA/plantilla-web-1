@@ -17,7 +17,7 @@ html {
 /* SLIDER INFO START */                          
 .slider-info{
     width: 100%;
-    height: 250px;
+    height: 275px;
     position: relative;
     display: flex;
     align-items: center !important;
@@ -39,6 +39,7 @@ html {
     /* background-color: blue; */
     cursor: pointer;
     width:65%;
+    max-width: 250px;
     position: absolute;
     transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44,1);
 }
@@ -174,6 +175,7 @@ b,strong{
 }
 .seccion-experiencias__element img{
     border-radius: 0 0 12px 12px;
+    width: 100%;
     /* width: 1px; */
 }
 @keyframes btnExperiencias {
@@ -774,6 +776,101 @@ img {
     height: 100%;
     background: black;
     opacity: 0.6;
+}
+.icono-chat,
+.icono-info,
+.icono-call{
+    position: relative;
+    left: -50px;
+    transition: .5s;
+    /* opacity: ; */
+}
+.icono-chat{
+    animation: iconoChat 10s infinite ease-in-out; 
+}
+.icono-info{
+    animation: iconoInfo 10s infinite ease-in-out; 
+}
+.icono-call{
+    animation: iconoCall 10s infinite ease-in-out; 
+}
+@keyframes iconoChat {
+    0%{
+        left: -50px;
+        opacity: 0; 
+    }
+    20%{
+        left:  0;
+        opacity: 1;
+    }
+    300%{
+        left: 0;
+        opacity: 1;
+    }
+    400%{
+        left: 0;
+        opacity: 1;
+    }
+    50%{
+        left: 0;
+        opacity: 1;
+    }
+    60%{
+        left: 0;
+        opacity: 1;
+    }
+    70%{
+        left: 0;
+        opacity: 1;
+    }
+    80%{
+        left: 0;
+        opacity: 1;
+    }
+    90%{
+        left: 0;
+        opacity: 1;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes iconoInfo {
+    0%{
+        left: -50px;
+        opacity: 0; 
+    }
+    5%{
+        left: -50px;
+        opacity: 0;
+    }
+    25%{
+        left:  0;
+        opacity: 1;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes iconoCall {
+    0%{
+        left: -50px;
+        opacity: 0; 
+    }
+    10%{
+        left:  -50px;
+        opacity: 0;
+    }
+    30%{
+        left: 0;
+        opacity: 1;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
 }
 /* BANnner principal titulo h1 principal */
 .titulo-principal{
