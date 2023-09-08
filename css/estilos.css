@@ -289,7 +289,7 @@ b,strong{
 .whatsapp-contactanos {
     color: #fff;
     display: flex;
-    width: 270px;
+    width: 250px;
     justify-content: end;
     align-items: center;
     position: relative;
@@ -303,7 +303,7 @@ b,strong{
 .whatsapp-contactanos__img {
     width: 100px;
     position: absolute;
-    left: 0
+    left: -5px
 }
 
 .whatsapp-contactanos__text {
@@ -721,7 +721,7 @@ img {
     width: 55px;
     height: 56px;
     background-color: #0e2758;
-    opacity: 0.9;
+    opacity: 0.8;
     border-radius: 50%;
     border: none;
     outline: none;
