@@ -129,7 +129,7 @@ b,strong{
 .title-servicios{
     border-bottom: 2px solid rgb(250, 241, 241);
 }
-.servicios-element{
+.servicios-element .shadow-md{
     border-bottom: 2px solid rgb(221, 221, 221);
     /* border-top: 1px solid rgb(221, 221, 221); */
     /* border: 2px solid rgb(221, 221, 221); */
@@ -681,16 +681,30 @@ img {
 }
 
 .footer {
-    margin-top: auto;
-    background: #0e2758 !important;
-    padding-bottom: 6.1rem;
+    /* margin-top: auto;} */
+    /* background: #0e2758 !important; */
+    /* padding-bottom: 6.1rem; */
     position: relative
 }
 
 .footer .container {
     position: relative
 }
-
+.contactanos-footer{
+    display: flex;
+    width: fit-content;
+    background-color: #0e2758;
+    margin: 0 auto;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+.contactanos-footer:hover{
+    color: white;
+}
 .dmca-badge img {
     display: none
 }
@@ -1087,6 +1101,11 @@ img {
     background-color: var(--bs-nomebaja-magenta) !important
 }
 
+/* Slider Secundario */
+.slider-problemas .carousel-inner .carousel-item img,
+.slider-problemas .carousel-inner .carousel-item{
+    border-radius: 12px;
+}
 .barra-slider--enlaces {
     display: flex;
     justify-content: center;
@@ -1300,8 +1319,6 @@ img {
 
     .footer {
         margin-top: auto;
-        background: #0e2758 !important;
-        padding-bottom: 3rem
     }
 
     .dmca-badge img {
