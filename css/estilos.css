@@ -731,6 +731,10 @@ img {
     bottom: 95px;
     right: 15px;
     z-index: 1000;
+    transition: .5s;
+}
+.hidden{
+    opacity: 0;
 }
 .enlace-whatsapp__flotante .boton-whatsapp__img {
     transition-duration: .5s
