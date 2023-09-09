@@ -715,9 +715,12 @@ img {
 .contactanos-footer:hover{
     color: white;
 }
+.footer-content-box{
+    border-top: 1px solid #e7e7e7;
+}
 .footer-content .footer-element:nth-child(1),
 .footer-content .footer-element:nth-child(2){
-    border-bottom: 1px solid #0e2758;
+    border-bottom: 1px solid #e2e2e2;
 }
 .footer-element ul{
     list-style: none;
@@ -727,6 +730,10 @@ img {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+.footer-element ul li{
+    width: 100%;
+    text-align: center;
 }
 .footer-element ul li a{
     text-decoration:  none;
@@ -1128,7 +1135,7 @@ img {
 }
 
 .active {
-    background-color: var(--bs-nomebaja-magenta) !important
+    /* background-color: var(--bs-nomebaja-magenta) !important */
 }
 
 /* Slider Secundario */
@@ -1413,7 +1420,7 @@ img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border-bottom: 1px solid #0e2758;
+        border-bottom: 1px solid #e2e2e2;
     }
     .footer-element ul{
         align-items: center;
@@ -1692,6 +1699,10 @@ img {
     }
     .seccion-experiencias__element{
         width: 45%;
+    }
+    .footer-element{
+        width: 32%;
+        border-top: 1px solid #e2e2e2;
     }
 }
 @media screen and (min-width:1200px) {
