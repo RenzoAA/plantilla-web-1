@@ -701,14 +701,44 @@ img {
     font-weight: bolder;
     border-radius: 12px;
     margin-bottom: 1rem;
+    animation: signalContacto 1s infinite; 
+}
+@keyframes signalContacto {
+    0% {
+        box-shadow: 0 0 0 0 #0e2758
+    }
+
+    100% {
+        box-shadow: 0 0 0 11px rgba(0, 0, 0, 0)
+    }
 }
 .contactanos-footer:hover{
     color: white;
 }
+.footer-content .footer-element:nth-child(1),
+.footer-content .footer-element:nth-child(2){
+    border-bottom: 1px solid #0e2758;
+}
+.footer-element ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-element ul li a{
+    text-decoration:  none;
+    color: #2f3954;
+    transition: .5s;
+}
+.footer-element ul li a:hover{
+    font-weight: bold !important;
+}
 .dmca-badge img {
     display: none
 }
-
 .enlace-whatsapp__flotante {
     position: fixed;
     right: 32px;
@@ -1370,7 +1400,26 @@ img {
         margin-left: 1rem;
     }
     /* EXPERIENCIAS */
-
+    /* footer */
+    .footer-content{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-element{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #0e2758;
+    }
+    .footer-element ul{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .blog-card__leermas{
     font-size: 19px;
