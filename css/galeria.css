@@ -8,7 +8,7 @@
 }
 
 .gallery-imagenes {
-    height: 900px;
+    height: 625px;
     display: flex;
     justify-content: center;
     /* display: grid; */
