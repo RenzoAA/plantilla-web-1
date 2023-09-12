@@ -178,6 +178,9 @@ b,strong{
     width: 100%;
     /* width: 1px; */
 }
+.animation-ubicacion{
+    animation: btnExperiencias 3s infinite;
+}
 @keyframes btnExperiencias {
     0%{
         transform: rotateZ(0deg);
@@ -279,6 +282,17 @@ b,strong{
 }
 .articulos-enlaces:hover .icono-blog{
     transform: rotate(360deg);
+}
+
+/* UBICACIONES */
+
+.nuestras-ubicaciones__zonas{
+    border-top: 2px solid #e4e4e4;
+    padding: 34px 0 ;
+}
+.nuestras-ubicaciones__zonas:first-child{
+    border: none;
+    padding: 24px 0 ;
 }
 .card-title a{
     color: #113885 !important;
