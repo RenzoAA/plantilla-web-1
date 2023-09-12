@@ -4,6 +4,7 @@ body.lb-disable-scrolling {
 
 .lightboxOverlay {
   position: absolute;
+  min-height: 50vh;
   /* height: 100vh !important; */
   top: 0;
   left: 0;
