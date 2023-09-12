@@ -4,6 +4,7 @@ body.lb-disable-scrolling {
 
 .lightboxOverlay {
   position: absolute;
+  /* height: 100vh !important; */
   top: 0;
   left: 0;
   z-index: 9999;
@@ -17,11 +18,16 @@ body.lb-disable-scrolling {
   position: absolute;
   left: 0;
   width: 100%;
+  /* height: 700px; */
   z-index: 10000;
   text-align: center;
   line-height: 0;
   font-weight: normal;
   outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .lightbox .lb-image {
