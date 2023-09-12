@@ -287,7 +287,7 @@ b,strong{
 /* UBICACIONES */
 
 .nuestras-ubicaciones__zonas{
-    border-top: 2px solid #e4e4e4;
+    border-top: 3px solid #e4e4e4;
     padding: 34px 0 ;
 }
 .nuestras-ubicaciones__zonas:first-child{
