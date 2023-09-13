@@ -27,6 +27,7 @@
 
 .gallery img {
     width: 100%;
+    border-radius: 15px;
 }
 .gallery a{
     width: 300px;
