@@ -89,46 +89,6 @@
 
     <!-- Js External -->
     <script src="js/bootstrap.min.js"></script>
-    <style>
-        .heading-banner{
-            height: 271px; 
-            width: 100%;
-            background-image: url(imagenes/banner-pfizer-no-mebaja-pe-uno.jpg);
-            background-size: 100% 271px;
-            background-repeat: no-repeat;
-            background-position: center 65px;
-        }
-        @media screen and (min-width: 768px) {
-            .heading-banner{
-            height: 285px; 
-            width: 100%;
-            background-image: url(imagenes/banner-pfizer-no-mebaja-pe-uno.jpg);
-            background-size: 100% 285px;
-            background-repeat: no-repeat;
-            background-position: center 65px;
-        }
-        }
-        @media screen and (min-width: 992px) {
-            .heading-banner{
-            height: 295px; 
-            width: 100%;
-            background-image: url(imagenes/banner-pfizer-no-mebaja-pe-uno.jpg);
-            background-size: 100% 295px;
-            background-repeat: no-repeat;
-            background-position: center 65px;
-        }
-        }
-        @media screen and (min-width: 1200px) {
-            .heading-banner{
-            height: 325px; 
-            width: 100%;
-            background-image: url(imagenes/banner-pfizer-no-mebaja-pe-uno.jpg);
-            background-size: 100% 325px;
-            background-repeat: no-repeat;
-            background-position: center 65px;
-        }
-        }
-    </style>
 </head>
 
 <body>
@@ -194,220 +154,111 @@
     <!-- MAIN - CONTENIDO PRINCIPAL -->
     <main class="container-fluid main container-px-0 pb-5">
         <!-- SECTION 1 -->
-        <section class="w-100 heading-banner__nosotros heading-banner">
-            <div class="container d-flex align-items-end h-100">
-                <h1 class="text-white title-nosotros heading-banner__title p-4 bg-primary mb-5 titles-banners">SOBRE NOMEBAJA</h1>
-            </div>
-        </section>
         
         <div class="container">
             <!-- Barra para ir a inicio y indicador de donde esta la url actual -->
             <div class="row">
                 <!-- BREADCRUMB -->
-                <div class="col-12 pt-4" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <div class="col-12 pt-5" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb p-2 py-3 shadow p-3 mb-5 bg-body rounded">
                         <li class="breadcrumb-item"><a href="https://nomebaja.pe/" class="text- text-decoration-none fw-bold">Inicio</a></li>
-                        <li class="breadcrumb-item text-secondary" aria-current="page">Nosotros</li>
+                        <li class="breadcrumb-item text-secondary" aria-current="page">Sobre Nosotros</li>
                       </ol>
                 </div>
                 
                 <div class="col-12">
-                    <!-- SECTION 2 -->
-                    <section class="container pt-2 d-grid gap-3 pb-2">
-                        <h2 class="text-primary">¿Que es No Me Baja?</h2>
-                        <div class="row d-flex d-flex flex-lg-row-reverse">
-                            <div class="col-12 d-flex justify-content-center mb-3">
-                                
-                                <img class="pb-3 rounded img-asesoria" alt="Se observa un titulo que dice: ¿Que es No Me Baja?. Al lado una imagen de 3 doctores sonriendo" src="imagenes/nosotros/que-es-no-me-baja-pe-pe.webp" width="90%" height="100%" style="max-width: 600px;">
-                                
-                            </div>
-                            <div class="col-12 d-flex h-auto align-items-center">
-                                <p class="text-secondary lh-lg"><strong>Nomebaja</strong> es un grupo creado por mujeres del sector médico dedicadas a la venta de cytotec en Lima y otras ciudades del Perú. 
-
-                                    Nuestro principal objetivo es asesorar a las mujeres que presenten una ausencia de su periodo (regla). También está en nuestro deber determinar las causas específicas que afectan su ciclo menstrual y en caso se encuentre embarazada y no quiera continuar con su embarazo usar pildoras abortivas  para tratar un embarazo no deseado.
-                                    <b>
-                                        Tenemos el mejor servicio de asesoría para terminar un embarazo y también hacemos la <a href="lugares-de-venta/venta-en-lima" target="_blank" class="text-decoration-none"><strong>VENTA de CYTOTEC ORIGINAL SIN RECETA</strong></a>  para tratar sus problemas de retraso menstrual.
-                                    </b>
-                                    Un embarazo puede ocurrir sin haberlo planificado, inclusive a pesar de haber utilizado métodos anticonceptivos puede suceder esto.
-                                    
-                                </p>
-                            </div>
+                    <!-- Seccion 1 Nosotros SOBRE NOSOTROS -->
+                    <section class="container py-2">
+                        <div class="img-nosotros__principal d-flex justify-content-center mb-4">
+                            <img src="imagenes/plantilla-imagenes/doctores-1920-1500.jpg" width="100%" alt="">
+                        </div>
+                        <div class="nosotros-texto__principal">
+                            <h2 class="nosotros-title-principal text-center">Sobre <br class="br-nosotros"> Nosotros</h2>
+                            <p class="lh-lg  text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil suscipit quis quia quaerat laborum maxime sunt harum expedita necessitatibus tenetur reiciendis nobis amet mollitia, ea pariatur ipsa hic libero.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda debitis nobis repellendus sint sed. Quis voluptas pariatur ut officia est assumenda, quae ullam iste commodi libero nihil aliquid, explicabo saepe.
+                            </p>
+                            <a href="" class="btn-nosotros">CONTÁCTENOS</a>
                         </div>
                     </section>
+                    <!-- SECCION 2 NOSOTROS - TE OFRECEMOS -->
+                    <div class="container nosotros-servicios pb-5">
+                        <h2 class="nosotros-servicios__title text-primary pt-4 pb-4">¿Que te Ofrecemos?</h2>
+                        <div class="nosotros-servicios__content">
+                            <div class="nosotros-servicios__element">
+                                <img src="imagenes/plantilla-imagenes/pastillas-doctor.jpg" alt="">
+                                <div class="nosotros-servicios__text">
+                                    <h3 class="pb-2">Metodos 100% Confiables <img src="imagenes/globales/icono-escudo.png" width="35" alt=""></h3>
+                                    <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id at fugiat officia vero provident ratione numquam dignissimos iure dolor, itaque magnam nobis, similique totam maxime corrupti obcaecati ducimus consequuntur?</p>
+                                </div>
+                            </div>
+                            <div class="nosotros-servicios__element">
+                                <img src="imagenes/plantilla-imagenes/pastillas-doctor.jpg" alt="">
+                                <div class="nosotros-servicios__text">
+                                    <h3 class="pb-2 mb-3">Asesoria Completa 24 Hrs <img src="imagenes/globales/icono-personas-hablando.png" width="35" alt="" class="ms-1">  </h3>
+                                    <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id at fugiat officia vero provident ratione numquam dignissimos iure dolor, itaque magnam nobis, similique totam maxime corrupti obcaecati ducimus consequuntur?</p>
+                                </div>
+                            </div>
+                            <div class="nosotros-servicios__element">
+                                <img src="imagenes/plantilla-imagenes/pastillas-doctor.jpg" alt="">
+                                <div class="nosotros-servicios__text">
+                                    <h3 class="pb-2">Guía Paso a Paso durante el proceso <img src="imagenes/globales/icono-libro-engranaje.png" width="35" alt="" class="ms-1"></h3>
+                                    <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id at fugiat officia vero provident ratione numquam dignissimos iure dolor, itaque magnam nobis, similique totam maxime corrupti obcaecati ducimus consequuntur?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                     <!-- SECTION 3 -->
-                    <!-- OBJETIVOS -->
-                    <section class="container pt-4">
-                        <h2 class="text-primary text-center mb-4">Nuestros Lineamientos_</h2>
-                        <div class="row">
-                            <div class="col-12 col-md-6 mb-3">
-                                <div class="card">
-                                    <img src="imagenes/nosotros/objetivos-no-me-baja-pe-pe.webp" class="card-img-top"
-                                        alt="Se observa una mujer con un rostro de alivio y al lado un titulo que dice : Objetivos" width="90%" height="100%" style="max-width: 600px;">
-                                    <div class="card-body d-grid gap-2">
-                                        <h3 class="card-title text-primary text-center">Objetivos</h3>
-                                        <p class="card-text text-center text-secondary m-0 p-0">
-                                        <ul class="text-secondary m-0 text-center ">
-                                            <li>Distinguir de manera puntual cuales son las opciones más efectivas ante
-                                                un
-                                                embarazo
-                                                no planificado.</li> <br>
-                                            <li><b class="">Mantener bajos los
-                                                <a href="blog/cytotec-precio" target="_blank" class="text-decoration-none"><strong class="text-primary">Precios de Las Pastillas Cytotec</strong></a>
-                                                
-                                                en el
-                                                mercado.</b>
-                                            </li> <br>
-                                            <li>Seleccionar conscientemente la información y asesoría más efectiva que
-                                                te
-                                                oriente
-                                                acertadamente a la toma de una decisión, para Usar Las Pastillas
-                                                Abortivas
-                                                En
-                                                Perú.
-                                            </li> <br>
-                                            <li> Brindar un servicio de
-                                                Venta De Pastillas Abortivas Originales de
-                                                    calidad
-                                                    y
-                                                    gran
-                                                    efectividad.
-                                            </li> <br>
-                                            <li>Establecer una posición neutral con la cual el cliente se sienta
-                                                respaldado,
-                                                respetado y seguro.</li>
-                                        </ul>
-                                        </p>
-                                    </div>
+                    <!-- Nosotros- OBJETIVOS  -->
+                    <section class="container py-5 nosotros-proposito pb-4">
+                        <h2 class="text-primary text-center mb-4 nosotros-proposito-title">Definiendo Nuestro Propósito</h2>
+                        <div class="row proposito-content">
+                            <div class="col-12 col-md-6 mb-3 proposito-element">
+                                <div class="proposito-img-box">
+                                    <img src="imagenes/plantilla-imagenes/banner-1280-1280.jpg" alt="">
+                                </div>
+                                <div class="proposito-text-box">
+                                    <h3 class="text-primary">Misión</h3>
+                                    <p class="text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error ab sed iste soluta optio odit incidunt? Odit facilis quidem alias, ducimus quia quo sequi, quod expedita ullam dolorum tenetur!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellat aut corporis, ratione reiciendis explicabo ab repudiandae debitis sint accusamus expedita facere saepe architecto odit adipisci. Obcaecati sit ipsa dolorem!
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 mb-3">
-                                <div class="card">
-                                    <img src="imagenes/nosotros/vision-no-me-baja-pe-pe.webp" class="card-img-top"
-                                        alt="Se observa una mujer con el rostro sonriendo y al lado un titulo que dice : Vision" width="90%" height="100%" style="max-width: 600px;">
-                                    <div class="card-body d-grid gap-2">
-                                        <h3 class="card-title text-primary text-center">Visión</h3>
-                                        <p class="card-text text-secondary text-center lh-lg">
-                                            <b>
-                                                Ser reconocidos como el mejor
-                                            portal
-                                            web
-                                            informativo y de <a class="text-decoration-none" target="_blank" href="blog/pastillas-abortivas">
-                                                <strong class="text-primary">Venta de Pastillas Abortivas</strong>
-                                            </a> 
-                                            con <a href="https://nomebaja.pe/" target="_blank" class="text-decoration-none">Nomebaja.pe</a> de referencia en el país.
-                                            </b>
-                                            
-                                            <br>
-                                            Donde puedas encontrar la más destacada asesoría médica especializada con el
-                                             uso de cytotec, como de las pastillas abortivas de mejor calidad, que te
-                                            permitan
-                                            elegir la opción
-                                            más efectiva ante un embarazo no deseado o irregularidades relacionadas con
-                                            tu
-                                            ciclo
-                                            menstrual.
-                                        </p>
-                                    </div>
+                            <div class="col-12 col-md-6 mb-3 proposito-element">
+                                <div class="proposito-img-box">
+                                    <img src="imagenes/plantilla-imagenes/banner-1280-1280.jpg" alt="">
+                                </div>
+                                <div class="proposito-text-box">
+                                    <h3 class="text-primary">Misión</h3>
+                                    <p class="text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error ab sed iste soluta optio odit incidunt? Odit facilis quidem alias, ducimus quia quo sequi, quod expedita ullam dolorum tenetur!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellat aut corporis, ratione reiciendis explicabo ab repudiandae debitis sint accusamus expedita facere saepe architecto odit adipisci. Obcaecati sit ipsa dolorem!
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 mb-3">
-                                <div class="card">
-                                    <img src="imagenes/nosotros/mision-no-me-baja-pe-pe.webp" class="card-img-top"
-                                        alt="Se observa una doctora sonriendo y al lado un titulo que dice : Mision" width="90%" height="100%" style="max-width: 600px;">
-                                    <div class="card-body d-grid gap-2">
-                                        <h3 class="card-title text-primary text-center">Misión</h3>
-                                        <p class="card-text text-center text-secondary lh-lg">
-                                            <b>Demostrar que nuestro portal
-                                                informativo <a href="https://nomebaja.pe/" target="_blank" class="text-decoration-none">Nomebaja.pe</a>
-                                                contiene el mejor contenido de la web. relacionada con la sexualidad,
-                                                menstruación planificación familiar y las píldoras abortivas
-                                                <strong>(Cytotec)</strong> de la más alta
-                                                confiabilidad.</b>
-                                             Destacando que estamos en constante crecimiento y evolución
-                                            anticipándonos a todas las necesidades de nuestra distinguida clientela.
-                                            Permitiéndonos
-                                            brindar así, un servicio con productos de calidad y gran efectividad
-                                            respaldado
-                                            por
-                                            nuestro excelente equipo de médicos especialistas.
-                                        </p>
-                                    </div>
+                            <div class="col-12 col-md-6 mb-3 proposito-element">
+                                <div class="proposito-img-box">
+                                    <img src="imagenes/plantilla-imagenes/banner-1280-1280.jpg" alt="">
+                                </div>
+                                <div class="proposito-text-box">
+                                    <h3 class="text-primary">Misión</h3>
+                                    <p class="text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error ab sed iste soluta optio odit incidunt? Odit facilis quidem alias, ducimus quia quo sequi, quod expedita ullam dolorum tenetur!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellat aut corporis, ratione reiciendis explicabo ab repudiandae debitis sint accusamus expedita facere saepe architecto odit adipisci. Obcaecati sit ipsa dolorem!
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <!-- 4 ASESORIA -->
-                    <section class="asesoria container pt-5 pb-3">
-                        <div class="row gap-3">
-                            <h2 class="text-primary col-12 text-center">Asesoria Nomebaja</h2>
-                            <div class="col-12 d-flex justify-content-center mb-3">
-                                <img src="imagenes/nosotros/asesoria-nome-baja-pe-peru-.webp" alt="Se mira una Asesora con sus auriculares sonriendo"
-                                    class="rounded mx-auto img-asesoria" width="90%" height="100%" style="max-width: 600px;">
-                            </div>
-                            <div class="col-12">
-                                <p class="text-secondary lh-lg">
-                                    En nuestro portal web informativo NoMeBaja.pe
-                                    Te brindamos toda la asesoría relacionada con el retraso menstrual <a class="text-decoration-none" href="https://nomebaja.pe/blog/no-me-baja-la-regla-que-tomar" target="_blank"><strong
-                                        class="text-primary">”No Me Baja la Regla”.</strong></a>
-                                    Métodos para la planificación familiar y te asesoramos acerca del aborto ante un
-                                    embarazo no
-                                    deseado, indicándote los aspectos legales que posiblemente te amparen y el método
-                                    más
-                                    efectivo
-                                    según las dosis de Cytotec indicadas.
-                                    Toda esta información puedes leerla en nuestra página No Me Baja. Puedes
-                                    contactarnos
-                                    por
-                                    nuestro WhatsApp.
-                                </p>
-                                <p class="text-secondary lh-lg">
-                                    Donde te indicaremos la información acerca de nuestras 
-                                    <a class="text-decoration-none" href="https://nomebaja.pe/blog/pastillas-abortivas" target="_blank"><strong
-                                        class="text-primary">PASTILLAS
-                                        CYTOTEC.</strong></a>
-                                     Sus características,
-                                    métodos, dosis, costo y entrega a domicilio (Delivery):
-                                </p>
-                                <ul class="text-secondary">
-                                    <li>Determinar las causas precisas que provocan la interrupción del ciclo menstrual.
-                                        “No
-                                        Me
-                                        Baja
-                                        la Regla”.</li> <br>
-                                    <li>Acudir oportunamente a una consulta médica especializada donde te indique las
-                                        causas
-                                        de
-                                        la
-                                        irregularidad menstrual o tiempo de embarazo.</li> <br>
-                                    <li>Mejor la información oportuna en relación al uso de misoprostol como metodo abortivo.</li>
-                            <br>
-                                    <li>Identificar cuáles son los motivos reales por el cual puedes considerar tu
-                                        embarazo
-                                        como
-                                        no
-                                        deseado.</li> <br>
-                                    <li>Categorizar toda la información acerca del aborto con Cytotec. brindada por los
-                                        médicos
-                                        especialista y la que obtuviste En nuestro portal web informativo NoMeBaja.pe
-                                    </li> <br>
-                                    <li>Asegúrate de estar dentro del tiempo que se considera legal el aborto médico.
-                                    </li><br>
-                                    <li>Cumplir con las recomendaciones de nuestros asesores de No Me Baja. Quienes te
-                                        indican
-                                        como
-                                        usar y <a href="https://nomebaja.pe/lugares-de-venta/venta-en-lima" target="_blank" class="text-decoration-none"><strong class="text-primary">DONDE COMPRAR CYTOTEC SIN RECETA</strong></a>
-                                    </li><br>
-                                    <li>Recuerda no realizar un aborto estando sola, no exceder las dosis recomendadas y
-                                        acudir
-                                        a
-                                        consulta médica luego de realizado el aborto con Cytotec para verificar su total
-                                        efectividad.
-                                    </li>
-                                </ul>
-                            </div>
+                           
                         </div>
                     </section>
                 </div>
+            </div>
+        </div>
+         <!-- Seccion 4 Formulario Nosotros -->
+         <div class="col-12 col-md-6 nosotros d-flex justify-content-center w-100">
+            <div class="container">
+
+                <p>
+                    <iframe src='https://contactos.farmacias-cytotec-peru.shop/contactanos/' title='formulario de contacto de farmacias-cytotec-peru.shop' height='721px' width='100%' scrolling='no' frameBorder="0"></iframe>
+                </p>
             </div>
         </div>
     </main>
