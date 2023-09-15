@@ -129,6 +129,13 @@ b,strong{
     background: #0e2758;
     border-radius: 12px;
 }
+.carousel-indicators{
+    margin-bottom: 0 !important;
+}
+/* HOME PRINCICPAL */
+.home-nosotros-title{
+    font-size: 2.3rem;
+}
 /* SOBRE NOSOTROS */
 .img-nosotros__principal img,
 .img-nosotros__principal{
@@ -1235,9 +1242,7 @@ button.carousel-control-next{
     width: 100%;
     display: none;
 }
-.heading-banner__ventas {
-    background-image: url(../imagenes/sobre-nosotros.jpg)
-}
+
 .heading-banner__preguntas {
     background-image: url(../imagenes/sobre-nosotros.jpg)
 }
