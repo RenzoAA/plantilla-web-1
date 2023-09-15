@@ -257,15 +257,35 @@ b,strong{
 .proposito-text-box p{
     text-align:  center;
 }
-/* NOSOTROS PROPOSITO END*/
-body.page-template-default.page.page-id-11.wp-embed-responsive{
-    background: #e97195 !important;
-}
-.wp-site-blocks,
-iframe{
-    background: #e97195 !important;
 
+.nosotros-contacto-box{
+    border-top: 2px solid #e2e2e2;
 }
+.nosotros-contacto-title{
+    font-size: 2.5rem;
+}
+.nosotros-contacto__arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nosotros-contacto__arrow img{
+    width: 65px;
+    animation: arrowJump 2s infinite;
+}
+@keyframes arrowJump {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(12px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* NOSOTROS PROPOSITO END*/
+
 /* NOSOTROS FORMULARIO END */
 
 /* NUESTROS SERVICIOS */
