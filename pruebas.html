@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Card</title>
+  <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .testimonial-card {
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial-card .quote {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .testimonial-card .author {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    .testimonial-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .testimonial-card {
+        padding: 10px;
+      }
+      .testimonial-card .quote {
+        font-size: 18px;
+      }
+      .testimonial-card .author {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="testimonial-card">
+    <img src="https://picsum.photos/id/200/100" alt="Jane Doe" width="100%" style="max-height: 340px;">
+    <p class="author">Jane Doe 28 años</p>
+    <p class="quote">This is a testimonial card. It can be used to display a testimonial from a customer or client.</p>
+  </div>
+</body>
+</html>
