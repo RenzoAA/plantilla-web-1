@@ -1,59 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonial Card</title>
-  <style>
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    .testimonial-card {
-      width: 100%;
-      max-width: 500px;
-      margin: 20px auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
-    .testimonial-card .quote {
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    .testimonial-card .author {
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 0;
-    }
-    .testimonial-card img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Imagenes de Mujeres</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
 
-    @media (max-width: 768px) {
-      .testimonial-card {
-        padding: 10px;
-      }
-      .testimonial-card .quote {
-        font-size: 18px;
-      }
-      .testimonial-card .author {
-        font-size: 14px;
-      }
-    }
-  </style>
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    </style>
 </head>
 <body>
-  <div class="testimonial-card">
-    <img src="https://picsum.photos/id/200/100" alt="Jane Doe" width="100%" style="max-height: 340px;">
-    <p class="author">Jane Doe 28 años</p>
-    <p class="quote">This is a testimonial card. It can be used to display a testimonial from a customer or client.</p>
-  </div>
+    <div class="slider">
+        <div class="image-container">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
