@@ -19,20 +19,33 @@ html {
     object-fit: cover;
 }
 /* btn contenidos */
-.btn-contenidos{
+.contenido-box{
     text-decoration: none;
     background: #0e2758;
-    color: white;
+    color: white !important;
     font-weight: bold;
     gap: .2rem;
     padding: 1rem;
-    border-radius: 6px;
+    width: 100%;
+}
+.contenido-box__btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+.contenido-box a{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    border-radius: 0 0 12px 12px !important;
 }
 .btn-contenidos:hover{
-    color: #fff;
 }
 .tabla-contenidos{
     width: 100%; 
+    /* background-color: red; */
 }
 /* SLIDER PRINCIPAL */
 .carousel-indicators [data-bs-target]{
@@ -461,8 +474,9 @@ b,strong{
 .tabla-contenidos{
     border: 2px solid #0e2758;
     border-radius: 12px;
-    max-width: 700px;
+    /* max-width: 700px; */
     padding: 1.5rem 1.5rem 1.5rem 1rem;
+    border-radius: 0 0 12px 12px;
 }
 .tabla-contenidos li{
     /* list-style: none; */
@@ -650,7 +664,10 @@ b,strong{
 }
 
 @media screen and (min-width:768px) {
-    
+    .title-banner{
+        bottom: calc(50% + 70px);
+        font-size: 3rem !important;
+    }
 /* BLOG ENLACES ARTICULOS CARDS */
 .articulos-enlaces{
     width: 48%;
@@ -713,6 +730,12 @@ b,strong{
 }
 
 @media screen and (min-width:992px) {
+    .title-banner{
+        bottom: calc(50% + 100px) !important;
+        font-size: 3.5rem !important;
+        max-width: 700px !important;
+        /* background-color: red; */
+    }
     .carousel-p {
         font-size: 1.3rem !important
     }
@@ -2026,6 +2049,12 @@ button.carousel-control-next{
     }
 }
 @media screen and (min-width:1200px) {
+    .title-banner{
+        bottom: calc(50% + 40px) !important;
+        font-size: 3.5rem !important;
+        max-width: 750px !important;
+        /* background-color: red; */
+    }
     .carousel-control-prev, .carousel-control-next{
         display: initial !important;
     }
