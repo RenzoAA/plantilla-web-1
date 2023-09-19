@@ -7,7 +7,22 @@
 html {
     overflow-x: hidden
 }
-
+.title-banner-nosotros{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: -100px;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    left: 0;
+    }
+    .title-principal-nosotros{
+        background-color: red;
+        width: fit-content;
+    }
 body {
     overflow: hidden;
     display: flex;
