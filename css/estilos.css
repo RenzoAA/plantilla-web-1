@@ -15,7 +15,7 @@ html {
     overflow-x: hidden
 }
 .img-articulo{
-    max-height: 350px;
+    max-height: 300px;
     object-fit: cover;
 }
 /* btn contenidos */
@@ -190,9 +190,9 @@ color: white;
 font-size: 3rem;
 text-align: center;
 width: 100%;
-/* background-color: red; */
+height: fit-content;
 left: 0;
-z-index: 999;
+z-index: 994;
 }
 .title-principal-nosotros::before{
     content: "";
@@ -200,7 +200,7 @@ z-index: 999;
     position: absolute;
     width: 100px;
     height: 50px;
-z-index: -997;
+z-index: -1;
 }
 /* banner sobre nosotros */
 .img-nosotros__principal img,
@@ -504,6 +504,17 @@ align-items: center;
     }
 }
 /* BLOG */
+.title-nuestro-blog{
+    width: 100%;
+    /* background-color: red; */
+    max-width: 100% !important;
+    top: calc(50% - 100px);
+    font-size: 2.5rem !important;
+}
+.title-nuestro-blog::before{
+    width: 160px !important;
+    top: -5px !important;
+}
 .articulo-blog__box{
     position: relative;
 }
@@ -512,9 +523,6 @@ align-items: center;
     /* top: -200px; */
     background: #f5f9ff;
     border-radius: 18px;
-}
-.articulo-blog__element{
-    
 }
 .section-border{
     border-top: 2px solid #e2e2e2;
@@ -708,6 +716,7 @@ align-items: center;
 }
 
 @keyframes signalEquipo {
+
     0% {
         box-shadow: 0 0 0 0 #e97195
     }
@@ -718,7 +727,14 @@ align-items: center;
 }
 
 @media screen and (min-width:768px) {
-    
+    .title-principal-nosotros{
+        font-size: 4rem !important;
+        top: calc(50% - 220px);
+    }
+    .title-principal-nosotros::before{
+        width: 150px;
+        height: 65px;
+    }
     .title-banner::before{
         top: 0px !important;
     }
@@ -738,6 +754,15 @@ align-items: center;
     .title-banner{
         bottom: calc(50% + 70px);
         font-size: 3rem !important;
+    }
+    /* title h1 banner blog */
+    .title-nuestro-blog{
+        font-size: 4rem !important;        
+        top: calc(50% - 150px);
+    }
+    .title-nuestro-blog::before{
+        width: 150px;
+        height:75px !important;
     }
 /* BLOG ENLACES ARTICULOS CARDS */
 .articulos-enlaces{
@@ -2194,14 +2219,12 @@ button.carousel-control-next{
 @media screen and (min-width:1200px) {
     .title-principal-nosotros{
         position: absolute;
-        top: calc(50%  - 250px);
+        top: -175px;
         color: white;
         font-size: 3rem;
         text-align: center;
         width: 100%;
-        /* background-color: red; */
         left: 0;
-        z-index: 999;
         }
     .title-banner::before{
         top: 5px !important;
@@ -2308,6 +2331,14 @@ width: 32%;
 }
 }
 @media screen and (min-width: 1400px) {
+    .title-principal-nosotros::before{
+        width: 160px;
+        height: 75px;
+    }
+    .title-principal-nosotros{
+        font-size: 4.5rem !important;
+        top: calc(50% - 200px);
+    }
     .banner-section {
         border-radius: 0 0 56px 56px;
     }
