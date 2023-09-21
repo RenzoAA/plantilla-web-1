@@ -144,6 +144,9 @@ html {
     z-index: 1;
 }
 /* SLIDER INFO END */
+.logo-sobreellas{
+    width: 175px;
+}
 .maquina{
     display: inline-flex;
     white-space: nowrap;
@@ -412,7 +415,7 @@ width: 500px;
 
 /* NUESTROS SERVICIOS */
 .title-servicios{
-    border-bottom: 2px solid rgb(250, 241, 241);
+    /* border-bottom: 2px solid rgb(250, 241, 241); */
 }
 .servicios-element .shadow-md{
     border-bottom: 2px solid rgb(221, 221, 221);
@@ -771,6 +774,10 @@ align-items: center;
 }
 
 @media screen and (min-width:768px) {
+    .logo-sobreellas{
+        width: 175px !important;
+    }
+    
     .title-principal-nosotros{
         font-size: 4rem !important;
         top: calc(50% - 220px);
@@ -870,6 +877,9 @@ align-items: center;
 }
 
 @media screen and (min-width:992px) {
+    .logo-sobreellas{
+        width: 180px !important;
+    }    
     .ubicaciones-element-1{
         width: 60%;
     }
@@ -1040,11 +1050,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center
-}
-
-.logo {
-    margin-left: 1rem;
-    width: 75px
 }
 
 .hamburger-box {
@@ -1748,6 +1753,7 @@ button.carousel-control-next{
 }
 
 @media screen and (min-width:768px) {
+    
     .banner-section {
         border-radius: 0 0 36px 36px;
     }
@@ -2268,6 +2274,9 @@ button.carousel-control-next{
     }
 }
 @media screen and (min-width:1200px) {
+    .logo-sobreellas{
+        width: 200px !important;
+    }   
     .flotante__whatsapp{
         display: flex;
     }
