@@ -774,6 +774,16 @@ align-items: center;
 }
 
 @media screen and (min-width:768px) {
+    .flotante__whatsapp{
+        display: flex;
+        gap: .9rem;
+    }
+    .whatsapp-flotante-img{
+        width: 70px;
+    }
+    .doctoraWhatsapp{
+        width: 130px;
+    }
     .logo-sobreellas{
         width: 175px !important;
     }
@@ -2274,11 +2284,28 @@ button.carousel-control-next{
     }
 }
 @media screen and (min-width:1200px) {
+    .btn-scroll{
+        right: 45px;
+       bottom: 130px;
+    }
     .logo-sobreellas{
         width: 200px !important;
     }   
     .flotante__whatsapp{
         display: flex;
+        gap: 1rem;
+    }
+    .whatsapp-flotante-img{
+        width: 80px;
+    }
+    .realiza-consulta{
+        padding: 8px 12px !important; 
+    }
+    .doctoraWhatsapp{
+        width: 165px;
+    }
+    .logo-sobreellas{
+        width: 175px !important;
     }
     .title-principal-nosotros{
         position: absolute;
