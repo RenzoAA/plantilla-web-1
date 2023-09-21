@@ -34,6 +34,7 @@ html {
     align-items: center;
     gap: .5rem;
 }
+
 .contenido-box a{
     display: flex;
     text-decoration: none;
@@ -41,7 +42,39 @@ html {
     width: 100%;
     border-radius: 0 0 12px 12px !important;
 }
-.btn-contenidos:hover{
+
+.flotante__whatsapp{
+    display: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: end;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: red; */
+    text-decoration: none;
+    gap: .5rem;
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+}
+.doctora-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.doctora-box p{
+    background-color: #0e2758;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 12px;
+    animation: signalFlotante 1.5s infinite;
+}
+.doctora-box img{
+    animation: signalFlotante 1.5s infinite;
+}
+.whatsapp-flotante-img{
+    animation: signalFlotante 1.5s infinite;
 }
 .tabla-contenidos{
     width: 100%; 
@@ -175,8 +208,18 @@ b,strong{
     }
 }
 /* HOME PRINCICPAL */
+.img-articulo{
+    opacity: 0;
+}
 .banner-nosotros{
-    border-radius: 12px !important;
+    height: 100%;
+    width: 100%;
+    /* background-image: url(../imagenes/plantilla-imagenes/articulo-mobile.jpg); */
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 65px;
+    position: relative;
 }
 .home-nosotros-title{
     font-size: 2.3rem;
@@ -185,7 +228,8 @@ b,strong{
 
 .title-principal-nosotros{
 position: absolute;
-top: calc(50% - 150px);
+top: calc(50% - 185px);
+/* background-color: red; */
 color: white;
 font-size: 3rem;
 text-align: center;
@@ -826,6 +870,15 @@ align-items: center;
 }
 
 @media screen and (min-width:992px) {
+    .ubicaciones-element-1{
+        width: 60%;
+    }
+    .articulos-enlace{
+        width: 40%;
+    }
+    .nuestras-ubicaciones__zonas{
+        gap: 1rem;
+    }
     /* NOSOTROS PRINCIPAL */
     .nosotros-box-principal{
         display: flex;
@@ -858,9 +911,6 @@ align-items: center;
         font-size: 1.3rem !important
     }
     /* BLOG ENLACES ARTICULOS CARDS */
-.articulos-enlaces{
-    width: 32%;
-}
 }
 
 .btn-contactanos {
@@ -1165,7 +1215,7 @@ img {
     }
 
     50% {
-        transform: scale(1.1)
+        transform: scale(1.05)
     }
 
     100% {
@@ -1360,6 +1410,7 @@ button.carousel-control-next{
 /* Banner articulos */
 .banner-articulo{
     position: relative;
+    width: 100%;
 }
 .banner-articulo::before{
     content: "";
@@ -2217,6 +2268,9 @@ button.carousel-control-next{
     }
 }
 @media screen and (min-width:1200px) {
+    .flotante__whatsapp{
+        display: flex;
+    }
     .title-principal-nosotros{
         position: absolute;
         top: -175px;
@@ -2232,7 +2286,7 @@ button.carousel-control-next{
     .banner-articulo,
     .img-articulo,
     .banner-articulo::before{
-        border-radius: 12px !important;
+        /* border-radius: 0 0 32px 32px !important; */
     }
     .title-principal-nosotros{
         font-size: 5rem;
@@ -2322,9 +2376,6 @@ font-size: 3.5rem;
     font-size: 1.3rem !important
 }
 /* BLOG ENLACES ARTICULOS CARDS */
-.articulos-enlaces{
-width: 32%;
-}
 /* EXPERIENCIAS */
 .seccion-experiencias__element{
     width: 32%;
@@ -2337,7 +2388,7 @@ width: 32%;
     }
     .title-principal-nosotros{
         font-size: 4.5rem !important;
-        top: calc(50% - 200px);
+        top: calc(50% - 220px);
     }
     .banner-section {
         border-radius: 0 0 56px 56px;
@@ -2408,3 +2459,4 @@ button.carousel-control-prev{
         left: 6% !important;
     }
 }
+
