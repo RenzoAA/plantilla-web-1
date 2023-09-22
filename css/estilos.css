@@ -1451,8 +1451,9 @@ button.carousel-control-next{
     font-size: 2rem;
 }
 /* Banner principal texto */
+
 .banner-principal__texto{
-    top: calc(50% - 180px);
+    top: calc(50% - 190px);
     margin:0 auto;
     left: 0;
     right: 0;
