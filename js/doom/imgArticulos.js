@@ -2,7 +2,6 @@ const d = document;
 export default function imgArticulos(imagenArticulo,bannerBg){
     const $imgArticulo = d.querySelector(imagenArticulo),
     $bannerBg = d.querySelector(bannerBg);
-    console.log($bannerBg)
     addEventListener('resize',()=>{
         if(innerWidth < 768) {
             $bannerBg.style.backgroundImage = "url(../imagenes/plantilla-imagenes/articulo-mobile.jpg)";
