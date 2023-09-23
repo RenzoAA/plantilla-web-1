@@ -324,7 +324,7 @@ width: 500px;
 .btn-nosotros{
     display: flex;
     width: fit-content;
-    background-color: #0e2758;
+    background-color: #e97195;
     margin: 0 auto;
     font-weight: bold;
     letter-spacing: 1px;
@@ -335,6 +335,7 @@ width: 500px;
     border-radius: 8px;
     margin-bottom: 1rem;
     transition: .5s;
+    animation: signalEquipo 1.5s infinite
 }
 .btn-sobre-nosotros{
     animation: signalEquipo 1.5s infinite
@@ -2307,7 +2308,7 @@ button.carousel-control-next{
         width: 165px;
     }
     .logo-sobreellas{
-        width: 175px !important;
+        width: 185px !important;
     }
     .title-principal-nosotros{
         position: absolute;
